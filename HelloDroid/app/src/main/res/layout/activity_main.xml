@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context=".MainActivity" android:rotation="260">
+
+    <com.google.android.material.appbar.AppBarLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:fitsSystemWindows="true"
+            android:id="@+id/appBarLayout">
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="@dimen/fab_margin"
+            android:layout_marginBottom="16dp"
+            app:srcCompat="@android:drawable/ic_dialog_email" tools:srcCompat="@tools:sample/backgrounds/scenic"/>
+    <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            app:layout_anchorGravity="center|center_vertical|end"
+            app:layout_anchor="@+id/appBarLayout" style="@style/se" android:visibility="invisible"
+            app:navigationIcon="@drawable/ic_launcher_background" android:layout_height="37dp"
+            android:layout_width="match_parent"/>
+    <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/imageView" tools:visibility="visible"/>
+    <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/seekBar"/>
+    <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="match_parent"
+                      android:orientation="vertical"/>
+    </HorizontalScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
